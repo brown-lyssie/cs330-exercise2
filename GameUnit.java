@@ -1,7 +1,15 @@
 // abstract class
-public class GameUnit {
-    public void attack(){}
-    public void walk() {
-        System.out.println(this.getClass().getName() +":walking");
+public abstract class GameUnit() {
+    MoveBehavior moveBehavior;
+
+    public void setMoveBehavior(MoveBehavior mb) {
+        moveBehavior = mb;
+    }
+
+    public GameUnit() {
+    }
+
+    public void move() {
+        moveBehavior.move();
     }
 }
