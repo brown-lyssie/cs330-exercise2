@@ -1,5 +1,5 @@
-class Fly implements MoveBehavior{
+class FlyBehavior implements MoveBehavior{
     public void move(){
-        System.out.printIn("flying");
+        System.out.println("*flying*");
     }
 }

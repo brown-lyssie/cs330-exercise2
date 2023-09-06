@@ -3,8 +3,15 @@ public class TestRTS {
     public static void main(String[] args) {
         GameUnit grunt = new Grunt();
         GameUnit tank = new Tank();
-        // grunt.walk();
-        // tank.walk();
+        // test movement
+        System.out.println("Testing movement...");
+        // test grunt movement
+        grunt.move();
+        // test tank movement
+        tank.move();
+        // set tank move to fly
+        tank.setMoveBehavior(new FlyBehavior());
+        tank.move();
         //test attacks
         System.out.println("Testing attacks...");
         //test grunt attacks

@@ -1,5 +1,5 @@
-class Walk implements MoveBehavior{
+class WalkBehavior implements MoveBehavior{
     public void move(){
-        System.out.printIn("walking");
+        System.out.println("*walking*");
     }
 }

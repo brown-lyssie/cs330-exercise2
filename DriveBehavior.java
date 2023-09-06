@@ -1,5 +1,5 @@
-class Drive implements MoveBehavior{
+class DriveBehavior implements MoveBehavior{
     public void move(){
-        System.out.printIn("driving");
+        System.out.println("*driving*");
     }
 }
