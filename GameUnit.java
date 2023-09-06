@@ -1,5 +1,16 @@
 // abstract class
 public class GameUnit {
+    MoveBehavior moveBehavior;
+
+    public void setMoveBehavior(MoveBehavior mb) {
+        moveBehavior = mb;
+    }
+
+    public GameUnit() {}
+
+    public void move() {
+        moveBehavior.move();
+
     public AttackBehavior attackBehavior;
     public void walk() {}
     // attack-related functions
